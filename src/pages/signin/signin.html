@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar color="duckcoin">
+    <ion-title>Se connecter</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2 text-center>La monnaie solidaire</h2>
+
+  <p text-CENTER>SE CONNECTER</p>
+
+  <ion-item>
+    <ion-label stacked>Username</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label stacked>Password</ion-label>
+    <ion-input type="password"></ion-input>
+  </ion-item>
+
+  <br>
+
+  <button ion-button block (click)="gotoHome()">Se connecter</button>
+
+  <br>OU<br><br>
+
+  <button ion-button block color="duckcoin" (click)="gotoSignUp()">S'inscrire</button>
+
+</ion-content>

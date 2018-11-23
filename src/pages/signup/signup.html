@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-navbar color="duckcoin">
+    <ion-title>S'inscrire</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2 text-center>La monnaie solidaire</h2>
+
+  <ion-item>
+    <ion-label stacked>Pseudo</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label stacked>Adresse email</ion-label>
+    <ion-input type="email"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label stacked>Mot de passe</ion-label>
+    <ion-input type="password"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label stacked>Répéter le mot de passe</ion-label>
+    <ion-input type="password"></ion-input>
+  </ion-item>
+
+  <br>
+
+  <button ion-button block (click)="gotoHome()">S'inscrire</button>
+
+  <br>OU<br>
+
+  <button ion-button block color="duckcoin" (click)="gotoSignIn()">Se connecter</button>
+
+</ion-content>

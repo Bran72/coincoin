@@ -14,8 +14,10 @@ import { NavController, NavParams, ViewController, Platform } from 'ionic-angula
 })
 export class ModalPage {
   valeur : any;
+  transactions : any;
+  transaction : any;
   constructor(public platform: Platform, public params: NavParams, public viewCtrl: ViewController) {
-    var transactions = [
+      var transactions = [
       {
         'sender': 'charles',
         'recipient': 'maxime',
@@ -107,7 +109,8 @@ export class ModalPage {
         'amount': 100,
       }
     ];
-    this.transaction = transactions[this.params.get('sender')];
+
+      this.transaction = transactions[this.params.get('sender')];
   }
 
   dismiss() {

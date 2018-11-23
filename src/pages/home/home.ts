@@ -7,8 +7,9 @@ import { ModalPage } from '../../pages/modal/modal'; // la page modale est dans 
   templateUrl: 'home.html'
 })
 export class HomePage {
+  transactions : any;
+
   constructor(public navCtrl: NavController, public modalCtrl : ModalController) {
-   var transactions = [];
    this.transactions = [
      {
        'sender': 'charles',

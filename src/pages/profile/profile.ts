@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams, ActionSheetController, Platform } 
 import { IonicStorageModule } from "@ionic/storage";
 
 import { HomePage } from "../home/home";
+import {TabsPage} from "../tabs/tabs";
 
 /**
  * Generated class for the ProfilePage page.
@@ -26,7 +27,10 @@ export class ProfilePage {
   }
 
   gotoHome() {
-    this.navCtrl.setRoot(HomePage)
+    this.navCtrl.push(HomePage, {
+        un_parametre: 'Je suis un paramètre'
+    });
+
   }
 
 }

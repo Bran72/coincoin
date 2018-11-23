@@ -12,10 +12,10 @@ export class DevisePipe implements PipeTransform {
   /**
    * Takes a value and makes it lowercase.
    */
-  transform(value: string, args) {
+  transform(value: any, args) {
     switch(args){
       case "dollar": {
-        let change:any = value * 1.15;
+        let change = value * 1.15;
         let arrondi = change*1000;
         arrondi = Math.round(arrondi);
         arrondi = arrondi/1000;

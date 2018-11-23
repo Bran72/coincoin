@@ -21,7 +21,7 @@ import { SignupPage } from "../pages/signup/signup";
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
-import { TransactionComponent } from '../../components/transaction/transaction.component';
+//import { TransactionComponent } from '../components/transaction/transaction';
 
 @NgModule({
   declarations: [

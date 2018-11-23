@@ -15,7 +15,7 @@ export class DevisePipe implements PipeTransform {
   transform(value: string, args) {
     switch(args){
       case "dollar": {
-        let change = value * 1.15;
+        let change:any = value * 1.15;
         let arrondi = change*1000;
         arrondi = Math.round(arrondi);
         arrondi = arrondi/1000;
